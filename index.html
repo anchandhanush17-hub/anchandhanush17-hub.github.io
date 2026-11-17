@@ -90,6 +90,14 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.92rem;border-top:1px so
   .skills li{grid-template-columns:1fr;gap:.1rem}
   .bars{height:150px}
 }
+    /* Project card layout fix */
+.project{display:flex;flex-direction:column}
+.project .info{order:1}
+.project .gallery{order:2;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));padding:0 1.75rem 1.75rem}
+.project .shot{order:2;min-height:0;background:none;display:block;padding:0 1.75rem 1.75rem}
+.project .shot img{height:auto;object-fit:contain;border:1px solid var(--line);border-radius:6px}
+.project:has(.gallery) .shot{display:none}
+.shot.noimg{padding:1rem 1.75rem}
 </style>
 </head>
 <body>
