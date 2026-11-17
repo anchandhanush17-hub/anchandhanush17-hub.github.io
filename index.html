@@ -76,6 +76,9 @@ nav a:hover{color:var(--ink)}
 .tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.25rem}
 .tags span{border:1px solid var(--line);border-radius:999px;padding:.1rem .7rem;font-size:.85rem;color:var(--muted)}
 .links a{font-weight:500;margin-right:1.25rem}
+.gallery{grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.75rem;padding:0 1.75rem 1.75rem}
+.gallery a{display:block;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.gallery img{width:100%;display:block}
 .resume-bar{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center;margin-bottom:1.25rem}
 .resume-bar p{margin:0;color:var(--muted)}
 .pdf{width:100%;height:80vh;min-height:480px;border:1px solid var(--line);border-radius:10px;background:var(--card)}
@@ -147,21 +150,46 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.92rem;border-top:1px so
   <div class="wrap">
     <h2>Dashboards and projects</h2>
     <div class="projects">
+      
+<!-- PROJECT 1: BANKING LOAN ANALYTICS -->
+<article class="project">
+  <a class="shot" href="images/Dashboard_1.png" target="_blank"><img src="images/Dashboard_1.png" alt="Banking Loan Analytics dashboard" onerror="this.parentElement.classList.add('noimg')"><span class="ph">Upload images/Dashboard_1.png</span></a>
+  <div class="info">
+    <h3>Banking Loan Analytics (ICICI Bank)</h3>
+    <p class="meta">Power BI · October 2026</p>
+    <ul>
+      <li>Cleaned the loan data in Excel and queried it with SQL.</li>
+      <li>Built a 3-page Power BI report with DAX measures for delinquent and default loan rates, total loan amount and total collection.</li>
+      <li>Added charts by age group, loan status, branch, state, religion, grade, product group and monthly disbursement.</li>
+    </ul>
+    <div class="tags"><span>Excel</span><span>SQL</span><span>Power BI</span><span>DAX</span></div>
+  </div>
+  <div class="gallery">
+    <a href="images/Dashboard_1.png" target="_blank"><img src="images/Dashboard_1.png" alt="Loan dashboard page 1" onerror="this.parentElement.style.display='none'"></a>
+    <a href="images/Dashboard_2.png" target="_blank"><img src="images/Dashboard_2.png" alt="Loan dashboard page 2" onerror="this.parentElement.style.display='none'"></a>
+    <a href="images/Dashboard_3.png" target="_blank"><img src="images/Dashboard_3.png" alt="Loan dashboard page 3" onerror="this.parentElement.style.display='none'"></a>
+  </div>
+</article>
 
-      <!-- PROJECT 1 -->
-      <article class="project">
-        <a class="shot" href="images/banking-dashboard.png" target="_blank"><img src="images/banking-dashboard.png" alt="Banking loan and transaction analytics dashboard" onerror="this.parentElement.classList.add('noimg')"><span class="ph">Upload images/banking-dashboard.png</span></a>
-        <div class="info">
-          <h3>Banking Loan and Transaction Analytics</h3>
-          <p class="meta">Power BI · October 2026</p>
-          <ul>
-            <li>Cleaned bank loan and debit/credit transaction data in Excel and queried it with SQL.</li>
-            <li>Built Power BI dashboards using DAX measures to track loans and transactions.</li>
-            <li>Worked on the transaction analysis as part of a team during my internship.</li>
-          </ul>
-          <div class="tags"><span>Excel</span><span>SQL</span><span>Power BI</span><span>DAX</span></div>
-        </div>
-      </article>
+<!-- PROJECT 1B: BANK DEBIT AND CREDIT ANALYSIS -->
+<article class="project">
+  <a class="shot" href="images/dashboard-page-1.png" target="_blank"><img src="images/dashboard-page-1.png" alt="Bank Debit and Credit Analysis dashboard" onerror="this.parentElement.classList.add('noimg')"><span class="ph">Upload images/dashboard-page-1.png</span></a>
+  <div class="info">
+    <h3>Bank Debit and Credit Analysis</h3>
+    <p class="meta">Power BI · Team project during internship · September 2026</p>
+    <ul>
+      <li>Analysed debit and credit transactions across several banks as part of a team at Ai Variant.</li>
+      <li>Built DAX measures for total credited and debited amount, credit to debit ratio, net transaction and activity ratio.</li>
+      <li>Added charts for transactions by bank, transaction method, risk indicator, monthly growth and branch.</li>
+    </ul>
+    <div class="tags"><span>Excel</span><span>SQL</span><span>Power BI</span><span>DAX</span></div>
+  </div>
+  <div class="gallery">
+    <a href="images/dashboard-page-1.png" target="_blank"><img src="images/dashboard-page-1.png" alt="Debit and credit dashboard page 1" onerror="this.parentElement.style.display='none'"></a>
+    <a href="images/dashboard-page-2.png" target="_blank"><img src="images/dashboard-page-2.png" alt="Debit and credit dashboard page 2" onerror="this.parentElement.style.display='none'"></a>
+  </div>
+</article>
+     
 
       <!-- PROJECT 2 -->
       <article class="project">
