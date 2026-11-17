@@ -159,20 +159,32 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.92rem;border-top:1px so
     <h2>Dashboards and projects</h2>
     <div class="projects">
       
+<style>
+.pj{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.75rem}
+.pj h3{font-size:1.5rem;margin-bottom:.25rem}
+.pj .meta{color:var(--muted);font-size:.92rem;margin:0 0 1rem}
+.pj ul{margin:0 0 1rem;padding-left:1.1rem;max-width:52rem}
+.pj li{margin-bottom:.4rem}
+.pj .tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.5rem}
+.pj .tags span{border:1px solid var(--line);border-radius:999px;padding:.1rem .7rem;font-size:.85rem;color:var(--muted)}
+.pj-gal{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.pj-gal.one{grid-template-columns:minmax(0,760px)}
+.pj-gal a{display:block;aspect-ratio:16/9;background:var(--paper);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.pj-gal a:hover{border-color:var(--amber)}
+.pj-gal img{width:100%;height:100%;object-fit:contain;display:block}
+</style>
+
 <!-- PROJECT 1: BANKING LOAN ANALYTICS -->
-<article class="project">
-  <a class="shot" href="images/Dashboard_1.png" target="_blank"><img src="images/Dashboard_1.png" alt="Banking Loan Analytics dashboard" onerror="this.parentElement.classList.add('noimg')"><span class="ph">Upload images/Dashboard_1.png</span></a>
-  <div class="info">
-    <h3>Banking Loan Analytics (ICICI Bank)</h3>
-    <p class="meta">Power BI · October 2026</p>
-    <ul>
-      <li>Cleaned the loan data in Excel and queried it with SQL.</li>
-      <li>Built a 3-page Power BI report with DAX measures for delinquent and default loan rates, total loan amount and total collection.</li>
-      <li>Added charts by age group, loan status, branch, state, religion, grade, product group and monthly disbursement.</li>
-    </ul>
-    <div class="tags"><span>Excel</span><span>SQL</span><span>Power BI</span><span>DAX</span></div>
-  </div>
-  <div class="gallery">
+<article class="pj">
+  <h3>Banking Loan Analytics (ICICI Bank)</h3>
+  <p class="meta">Power BI · October 2026</p>
+  <ul>
+    <li>Cleaned the loan data in Excel and queried it with SQL.</li>
+    <li>Built a 3-page Power BI report with DAX measures for delinquent and default loan rates, total loan amount and total collection.</li>
+    <li>Added charts by age group, loan status, branch, state, religion, grade, product group and monthly disbursement.</li>
+  </ul>
+  <div class="tags"><span>Excel</span><span>SQL</span><span>Power BI</span><span>DAX</span></div>
+  <div class="pj-gal">
     <a href="images/Dashboard_1.png" target="_blank"><img src="images/Dashboard_1.png" alt="Loan dashboard page 1" onerror="this.parentElement.style.display='none'"></a>
     <a href="images/Dashboard_2.png" target="_blank"><img src="images/Dashboard_2.png" alt="Loan dashboard page 2" onerror="this.parentElement.style.display='none'"></a>
     <a href="images/Dashboard_3.png" target="_blank"><img src="images/Dashboard_3.png" alt="Loan dashboard page 3" onerror="this.parentElement.style.display='none'"></a>
@@ -180,39 +192,35 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.92rem;border-top:1px so
 </article>
 
 <!-- PROJECT 1B: BANK DEBIT AND CREDIT ANALYSIS -->
-<article class="project">
-  <a class="shot" href="images/dashboard-page-1.png" target="_blank"><img src="images/dashboard-page-1.png" alt="Bank Debit and Credit Analysis dashboard" onerror="this.parentElement.classList.add('noimg')"><span class="ph">Upload images/dashboard-page-1.png</span></a>
-  <div class="info">
-    <h3>Bank Debit and Credit Analysis</h3>
-    <p class="meta">Power BI · Team project during internship · September 2026</p>
-    <ul>
-      <li>Analysed debit and credit transactions across several banks as part of a team at Ai Variant.</li>
-      <li>Built DAX measures for total credited and debited amount, credit to debit ratio, net transaction and activity ratio.</li>
-      <li>Added charts for transactions by bank, transaction method, risk indicator, monthly growth and branch.</li>
-    </ul>
-    <div class="tags"><span>Excel</span><span>SQL</span><span>Power BI</span><span>DAX</span></div>
-  </div>
-  <div class="gallery">
+<article class="pj">
+  <h3>Bank Debit and Credit Analysis</h3>
+  <p class="meta">Power BI · Team project during internship · September 2026</p>
+  <ul>
+    <li>Analysed debit and credit transactions across several banks as part of a team at Ai Variant.</li>
+    <li>Built DAX measures for total credited and debited amount, credit to debit ratio, net transaction and activity ratio.</li>
+    <li>Added charts for transactions by bank, transaction method, risk indicator, monthly growth and branch.</li>
+  </ul>
+  <div class="tags"><span>Excel</span><span>SQL</span><span>Power BI</span><span>DAX</span></div>
+  <div class="pj-gal">
     <a href="images/dashboard-page-1.png" target="_blank"><img src="images/dashboard-page-1.png" alt="Debit and credit dashboard page 1" onerror="this.parentElement.style.display='none'"></a>
     <a href="images/dashboard-page-2.png" target="_blank"><img src="images/dashboard-page-2.png" alt="Debit and credit dashboard page 2" onerror="this.parentElement.style.display='none'"></a>
   </div>
 </article>
-     
+
 <!-- PROJECT 2: ADVENTURE WORKS -->
-<article class="project">
-  <a class="shot" href="images/Adventure.png" target="_blank"><img src="images/Adventure.png" alt="Adventure Works sales performance dashboard" onerror="this.parentElement.classList.add('noimg')"><span class="ph">Upload images/Adventure.png</span></a>
-  <div class="info">
-    <h3>Adventure Works Sales Performance</h3>
-    <p class="meta">Power BI · November 2026</p>
-    <ul>
-      <li>Built a sales performance dashboard showing total sales, profit, orders, customers, production cost and products.</li>
-      <li>Added yearly, monthly and quarterly sales trends, and a chart of sales against production cost.</li>
-      <li>Showed top products and sales by product category, with filters for year, sales region and category.</li>
-    </ul>
-    <div class="tags"><span>Power BI</span></div>
+<article class="pj">
+  <h3>Adventure Works Sales Performance</h3>
+  <p class="meta">Power BI · November 2026</p>
+  <ul>
+    <li>Built a sales performance dashboard showing total sales, profit, orders, customers, production cost and products.</li>
+    <li>Added yearly, monthly and quarterly sales trends, and a chart of sales against production cost.</li>
+    <li>Showed top products and sales by product category, with filters for year, sales region and category.</li>
+  </ul>
+  <div class="tags"><span>Power BI</span></div>
+  <div class="pj-gal one">
+    <a href="images/Adventure.png" target="_blank"><img src="images/Adventure.png" alt="Adventure Works sales performance dashboard" onerror="this.parentElement.style.display='none'"></a>
   </div>
 </article>
-     
 
     </div>
   </div>
